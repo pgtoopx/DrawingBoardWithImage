@@ -2,23 +2,21 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
-import java.awt.geom.Line2D;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
 
-public class DrawingBoardWithMatrix extends JFrame {
+public class DrawingBoardWithImage extends JFrame {
 
     public static void main(String[] args) {
-        new DrawingBoardWithMatrix();
+        new DrawingBoardWithImage();
     }
 
-    public DrawingBoardWithMatrix() {
+    public DrawingBoardWithImage() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.add(new PaintSurface(), BorderLayout.CENTER);
         this.setSize(503, 771);
